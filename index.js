@@ -18,7 +18,7 @@ const app =express()
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.json())
-app.use('/api',require('./routes/menu.route'))
+app.use('/api',require('./routes/resto.route'))
 app.use(express.static('./client/crud/public'))
 
 const port=process.env.PORT |80
